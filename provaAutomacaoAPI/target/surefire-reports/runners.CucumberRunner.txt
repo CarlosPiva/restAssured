@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: runners.CucumberRunner
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 9, Errors: 1, Skipped: 0, Time elapsed: 3.913 s <<< FAILURE! - in runners.CucumberRunner
+Consultar uma restrição utilizando um CPF.Consultar uma restrição utilizando CPF  Time elapsed: 0.903 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: cpf=97093236014.
+
+Simulações.Validar contrato da API  Time elapsed: 0.614 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: instance type (array) does not match any allowed primitive type (allowed: ["object"])
+    level: "error"
+    schema: {"loadingURI":"file:/home/carlospj/Desktop/provaAutomacaoAPI/target/test-classes/jsonValidations.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "array"
+    expected: ["object"]
+
+  Actual: [{"id":11,"nome":"Fulano","cpf":"66414919004","email":"fulano@gmail.com","valor":11000.00,"parcelas":3,"seguro":true},{"id":12,"nome":"Pedro - Nome Alterado15275344194600","cpf":"17822386034","email":"carlos@email.com","valor":20000.00,"parcelas":20,"seguro":true},{"id":14,"nome":"Pedro - Nome Alterado 27276776648875","cpf":"97093236014","email":"carlos@email.com","valor":40000.00,"parcelas":20,"seguro":true},{"id":16,"nome":"Carlos Roberto Piva","cpf":"86593266544","email":"carlos@email.com","valor":1.00,"parcelas":20,"seguro":true},{"id":80,"nome":"Carlos Roberto Piva","cpf":"2324533","email":"carlos@email.com","valor":40000.00,"parcelas":20,"seguro":true}]
+
+
+Simulações.Criar uma simulação  Time elapsed: 0.163 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <400>.
+
+
+Simulações.Validar o valor mínimo da simulação  Time elapsed: 0.053 s  <<< FAILURE!
+java.lang.AssertionError: expected:<Valor deve ser maior ou igual a R$ 1.000> but was:<null>
+
+Simulações.Validar o número máximo de parcelas  Time elapsed: 0.038 s  <<< FAILURE!
+java.lang.AssertionError: expected:<Parcelas deve ser igual ou menor que 48> but was:<null>
+
+Simulações.Alterar os dados de uma simulação não cadastrada  Time elapsed: 0.069 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<CPF []não encontrado> but was:<CPF [0000000000 ]não encontrado>
+
+Simulações.Validar a alteração de CPF já existente  Time elapsed: 0.071 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <409> but was <200>.
+
+
+Simulações.Consultar uma simulação não existente utilizando o CPF  Time elapsed: 0.055 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<CPF []não encontrado> but was:<CPF [12536952211 ]não encontrado>
+
+Simulações.Excluir uma simulação cadastrada  Time elapsed: 0.059 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <400>.
+
+
+Simulações.Excluir uma simulação não cadastrada  Time elapsed: 0.022 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <404> but was <200>.
+
+

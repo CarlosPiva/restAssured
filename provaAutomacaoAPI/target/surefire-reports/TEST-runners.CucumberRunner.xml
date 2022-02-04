@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.CucumberRunner" time="3.913" tests="19" errors="1" skipped="0" failures="9">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/carlospj/Desktop/provaAutomacaoAPI/target/test-classes:/home/carlospj/Desktop/provaAutomacaoAPI/target/classes:/home/carlospj/.m2/repository/io/cucumber/cucumber-java/4.8.0/cucumber-java-4.8.0.jar:/home/carlospj/.m2/repository/io/cucumber/cucumber-core/4.8.0/cucumber-core-4.8.0.jar:/home/carlospj/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/home/carlospj/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/home/carlospj/.m2/repository/io/cucumber/cucumber-expressions/7.0.2/cucumber-expressions-7.0.2.jar:/home/carlospj/.m2/repository/io/cucumber/datatable/1.1.14/datatable-1.1.14.jar:/home/carlospj/.m2/repository/io/cucumber/datatable-dependencies/1.1.14/datatable-dependencies-1.1.14.jar:/home/carlospj/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/carlospj/.m2/repository/io/cucumber/cucumber-junit/4.8.0/cucumber-junit-4.8.0.jar:/home/carlospj/.m2/repository/info/cukes/cucumber-core/1.1.8/cucumber-core-1.1.8.jar:/home/carlospj/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/home/carlospj/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.3/cucumber-jvm-deps-1.0.3.jar:/home/carlospj/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/home/carlospj/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/carlospj/.m2/repository/org/apache/maven/plugins/maven-jxr-plugin/3.1.1/maven-jxr-plugin-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-jxr/3.1.1/maven-jxr-3.1.1.jar:/home/carlospj/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/carlospj/.m2/repository/org/apache/velocity/velocity-engine-core/2.0/velocity-engine-core-2.0.jar:/home/carlospj/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.jar:/home/carlospj/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.jar:/home/carlospj/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/home/carlospj/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/home/carlospj/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/carlospj/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar:/home/carlospj/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/carlospj/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.jar:/home/carlospj/.m2/repository/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.jar:/home/carlospj/.m2/repository/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.jar:/home/carlospj/.m2/repository/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar:/home/carlospj/.m2/repository/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/home/carlospj/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/home/carlospj/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.3/maven-shared-utils-3.3.3.jar:/home/carlospj/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.9.2/doxia-site-renderer-1.9.2.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-core/1.9.1/doxia-core-1.9.1.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.9.1/doxia-logging-api-1.9.1.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.9.1/doxia-sink-api-1.9.1.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.9.2/doxia-decoration-model-1.9.2.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.9.2/doxia-skin-model-1.9.2.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.9.1/doxia-module-xhtml-1.9.1.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml5/1.9.1/doxia-module-xhtml5-1.9.1.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.jar:/home/carlospj/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/home/carlospj/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/carlospj/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar:/home/carlospj/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/home/carlospj/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/home/carlospj/.m2/repository/commons-chain/commons-chain/1.1/commons-chain-1.1.jar:/home/carlospj/.m2/repository/dom4j/dom4j/1.1/dom4j-1.1.jar:/home/carlospj/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/home/carlospj/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/carlospj/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/3.0.0/maven-reporting-impl-3.0.0.jar:/home/carlospj/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/home/carlospj/.m2/repository/org/apache/maven/wagon/wagon-provider-api/2.4/wagon-provider-api-2.4.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-java/1.0.6/plexus-java-1.0.6.jar:/home/carlospj/.m2/repository/org/ow2/asm/asm/9.0/asm-9.0.jar:/home/carlospj/.m2/repository/com/thoughtworks/qdox/qdox/2.0.0/qdox-2.0.0.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/home/carlospj/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/carlospj/.m2/repository/io/rest-assured/rest-assured/4.3.1/rest-assured-4.3.1.jar:/home/carlospj/.m2/repository/org/codehaus/groovy/groovy/3.0.3/groovy-3.0.3.jar:/home/carlospj/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.3/groovy-xml-3.0.3.jar:/home/carlospj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/home/carlospj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/home/carlospj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/carlospj/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/carlospj/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/home/carlospj/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/carlospj/.m2/repository/io/rest-assured/json-path/4.3.1/json-path-4.3.1.jar:/home/carlospj/.m2/repository/org/codehaus/groovy/groovy-json/3.0.3/groovy-json-3.0.3.jar:/home/carlospj/.m2/repository/io/rest-assured/rest-assured-common/4.3.1/rest-assured-common-4.3.1.jar:/home/carlospj/.m2/repository/io/rest-assured/xml-path/4.3.1/xml-path-4.3.1.jar:/home/carlospj/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/carlospj/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/carlospj/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/home/carlospj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.4/jackson-databind-2.12.4.jar:/home/carlospj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.4/jackson-annotations-2.12.4.jar:/home/carlospj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.4/jackson-core-2.12.4.jar:/home/carlospj/.m2/repository/org/aeonbits/owner/owner/1.0.12/owner-1.0.12.jar:/home/carlospj/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/carlospj/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/carlospj/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.12.4/jackson-dataformat-yaml-2.12.4.jar:/home/carlospj/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/carlospj/.m2/repository/io/rest-assured/json-schema-validator/4.3.2/json-schema-validator-4.3.2.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/home/carlospj/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/home/carlospj/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/carlospj/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/carlospj/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/home/carlospj/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/home/carlospj/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/home/carlospj/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/home/carlospj/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/home/carlospj/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/home/carlospj/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/home/carlospj/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/carlospj/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/carlospj/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="user.country.format" value="BR"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/opt/jdk1.8.0_291/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/home/carlospj/Desktop/provaAutomacaoAPI/target/surefire/surefirebooter6262427938743823474.jar /home/carlospj/Desktop/provaAutomacaoAPI/target/surefire 2022-02-04T12-16-11_080-jvmRun1 surefire6549204832933248983tmp surefire_05798584391368557064tmp"/>
+    <property name="surefire.test.class.path" value="/home/carlospj/Desktop/provaAutomacaoAPI/target/test-classes:/home/carlospj/Desktop/provaAutomacaoAPI/target/classes:/home/carlospj/.m2/repository/io/cucumber/cucumber-java/4.8.0/cucumber-java-4.8.0.jar:/home/carlospj/.m2/repository/io/cucumber/cucumber-core/4.8.0/cucumber-core-4.8.0.jar:/home/carlospj/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/home/carlospj/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/home/carlospj/.m2/repository/io/cucumber/cucumber-expressions/7.0.2/cucumber-expressions-7.0.2.jar:/home/carlospj/.m2/repository/io/cucumber/datatable/1.1.14/datatable-1.1.14.jar:/home/carlospj/.m2/repository/io/cucumber/datatable-dependencies/1.1.14/datatable-dependencies-1.1.14.jar:/home/carlospj/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/carlospj/.m2/repository/io/cucumber/cucumber-junit/4.8.0/cucumber-junit-4.8.0.jar:/home/carlospj/.m2/repository/info/cukes/cucumber-core/1.1.8/cucumber-core-1.1.8.jar:/home/carlospj/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/home/carlospj/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.3/cucumber-jvm-deps-1.0.3.jar:/home/carlospj/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/home/carlospj/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/carlospj/.m2/repository/org/apache/maven/plugins/maven-jxr-plugin/3.1.1/maven-jxr-plugin-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-jxr/3.1.1/maven-jxr-3.1.1.jar:/home/carlospj/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/carlospj/.m2/repository/org/apache/velocity/velocity-engine-core/2.0/velocity-engine-core-2.0.jar:/home/carlospj/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.jar:/home/carlospj/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.jar:/home/carlospj/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/home/carlospj/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/home/carlospj/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/carlospj/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar:/home/carlospj/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/carlospj/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.jar:/home/carlospj/.m2/repository/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.jar:/home/carlospj/.m2/repository/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.jar:/home/carlospj/.m2/repository/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar:/home/carlospj/.m2/repository/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/home/carlospj/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/home/carlospj/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/home/carlospj/.m2/repository/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.jar:/home/carlospj/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.3/maven-shared-utils-3.3.3.jar:/home/carlospj/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.9.2/doxia-site-renderer-1.9.2.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-core/1.9.1/doxia-core-1.9.1.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.9.1/doxia-logging-api-1.9.1.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.9.1/doxia-sink-api-1.9.1.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.9.2/doxia-decoration-model-1.9.2.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.9.2/doxia-skin-model-1.9.2.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.9.1/doxia-module-xhtml-1.9.1.jar:/home/carlospj/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml5/1.9.1/doxia-module-xhtml5-1.9.1.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.jar:/home/carlospj/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/home/carlospj/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/carlospj/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar:/home/carlospj/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/home/carlospj/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/home/carlospj/.m2/repository/commons-chain/commons-chain/1.1/commons-chain-1.1.jar:/home/carlospj/.m2/repository/dom4j/dom4j/1.1/dom4j-1.1.jar:/home/carlospj/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/home/carlospj/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/carlospj/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/3.0.0/maven-reporting-impl-3.0.0.jar:/home/carlospj/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/home/carlospj/.m2/repository/org/apache/maven/wagon/wagon-provider-api/2.4/wagon-provider-api-2.4.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-java/1.0.6/plexus-java-1.0.6.jar:/home/carlospj/.m2/repository/org/ow2/asm/asm/9.0/asm-9.0.jar:/home/carlospj/.m2/repository/com/thoughtworks/qdox/qdox/2.0.0/qdox-2.0.0.jar:/home/carlospj/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/home/carlospj/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/home/carlospj/.m2/repository/io/rest-assured/rest-assured/4.3.1/rest-assured-4.3.1.jar:/home/carlospj/.m2/repository/org/codehaus/groovy/groovy/3.0.3/groovy-3.0.3.jar:/home/carlospj/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.3/groovy-xml-3.0.3.jar:/home/carlospj/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/home/carlospj/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/home/carlospj/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/carlospj/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/home/carlospj/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/home/carlospj/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/carlospj/.m2/repository/io/rest-assured/json-path/4.3.1/json-path-4.3.1.jar:/home/carlospj/.m2/repository/org/codehaus/groovy/groovy-json/3.0.3/groovy-json-3.0.3.jar:/home/carlospj/.m2/repository/io/rest-assured/rest-assured-common/4.3.1/rest-assured-common-4.3.1.jar:/home/carlospj/.m2/repository/io/rest-assured/xml-path/4.3.1/xml-path-4.3.1.jar:/home/carlospj/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/carlospj/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/carlospj/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/home/carlospj/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.4/jackson-databind-2.12.4.jar:/home/carlospj/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.4/jackson-annotations-2.12.4.jar:/home/carlospj/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.4/jackson-core-2.12.4.jar:/home/carlospj/.m2/repository/org/aeonbits/owner/owner/1.0.12/owner-1.0.12.jar:/home/carlospj/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/carlospj/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/carlospj/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.12.4/jackson-dataformat-yaml-2.12.4.jar:/home/carlospj/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/carlospj/.m2/repository/io/rest-assured/json-schema-validator/4.3.2/json-schema-validator-4.3.2.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/home/carlospj/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/home/carlospj/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/carlospj/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/carlospj/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/home/carlospj/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/home/carlospj/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/home/carlospj/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/home/carlospj/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/home/carlospj/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/home/carlospj/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/home/carlospj/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/home/carlospj/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/carlospj/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/carlospj/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/carlospj"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/opt/jdk1.8.0_291/jre"/>
+    <property name="basedir" value="/home/carlospj/Desktop/provaAutomacaoAPI"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/carlospj/Desktop/provaAutomacaoAPI/target/surefire/surefirebooter6262427938743823474.jar"/>
+    <property name="sun.boot.class.path" value="/opt/jdk1.8.0_291/jre/lib/resources.jar:/opt/jdk1.8.0_291/jre/lib/rt.jar:/opt/jdk1.8.0_291/jre/lib/sunrsasign.jar:/opt/jdk1.8.0_291/jre/lib/jsse.jar:/opt/jdk1.8.0_291/jre/lib/jce.jar:/opt/jdk1.8.0_291/jre/lib/charsets.jar:/opt/jdk1.8.0_291/jre/lib/jfr.jar:/opt/jdk1.8.0_291/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_291-b10"/>
+    <property name="user.name" value="CIANDT\carlospj"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.13.0-28-generic"/>
+    <property name="java.endorsed.dirs" value="/opt/jdk1.8.0_291/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/carlospj/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_291"/>
+    <property name="user.dir" value="/home/carlospj/Desktop/provaAutomacaoAPI"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="user.language.format" value="pt"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.291-b10"/>
+    <property name="java.ext.dirs" value="/opt/jdk1.8.0_291/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="Consultar uma restrição utilizando CPF" classname="Consultar uma restrição utilizando um CPF" time="0.903">
+    <error message="Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: cpf=97093236014." type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: cpf=97093236014.
+]]></error>
+    <system-out><![CDATA[Funcionalidade: Consultar uma restrição utilizando um CPF
+    Como usuário da API de consulta de restrições
+    Carlos deseja consultar um CPF
+    Para saber se há uma restrição no CPF
+
+  Contexto: Dado que Carlos tem acesso a API de consulta de restrições &amp#27;[90m# src/test/resources/features/restricoes.feature:8&amp#27;[0m
+
+  @oi
+  Cenário: Consultar uma restrição utilizando CPF                           &amp#27;[90m# src/test/resources/features/restricoes.feature:11&amp#27;[0m
+    &amp#27;[31mQuando &amp#27;[0m&amp#27;[31mCarlos consultar uma restrição utilizando o CPF&amp#27;[0m                  &amp#27;[90m# RestricoesSteps.carlosConsultarUmaRestriçãoUtilizandoOCPF()&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalArgumentException: Invalid number of path parameters. Expected 0, was 1. Redundant path parameters are: cpf=97093236014.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+	at io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at utils.Utils.getComParametro(Utils.java:60)
+	at actions.RestricoesAction.consultarCpfComRestricoes(RestricoesAction.java:24)
+	at steps.RestricoesSteps.carlosConsultarUmaRestriçãoUtilizandoOCPF(RestricoesSteps.java:13)
+	at ✽.Carlos consultar uma restrição utilizando o CPF(file:src/test/resources/features/restricoes.feature:12)
+&amp#27;[0m
+    &amp#27;[36mEntão &amp#27;[0m&amp#27;[36mserá retornado uma mensagem informando que o CPF possui restrição&amp#27;[0m &amp#27;[90m# RestricoesSteps.seráRetornadoUmaMensagemInformandoQueOCPFPossuiRestrição()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Consultar um CPF sem restrição" classname="Consultar uma restrição utilizando um CPF" time="0.576"/>
+  <testcase name="Validar contrato da API" classname="Simulações" time="0.614">
+    <failure message="1 expectation failed.&#10;Response body doesn&apos;t match expectation.&#10;Expected: The content to match the given JSON schema.&#10;error: instance type (array) does not match any allowed primitive type (allowed: [&quot;object&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/home/carlospj/Desktop/provaAutomacaoAPI/target/test-classes/jsonValidations.json#&quot;,&quot;pointer&quot;:&quot;&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;type&quot;&#10;    found: &quot;array&quot;&#10;    expected: [&quot;object&quot;]&#10;&#10;  Actual: [{&quot;id&quot;:11,&quot;nome&quot;:&quot;Fulano&quot;,&quot;cpf&quot;:&quot;66414919004&quot;,&quot;email&quot;:&quot;fulano@gmail.com&quot;,&quot;valor&quot;:11000.00,&quot;parcelas&quot;:3,&quot;seguro&quot;:true},{&quot;id&quot;:12,&quot;nome&quot;:&quot;Pedro - Nome Alterado15275344194600&quot;,&quot;cpf&quot;:&quot;17822386034&quot;,&quot;email&quot;:&quot;carlos@email.com&quot;,&quot;valor&quot;:20000.00,&quot;parcelas&quot;:20,&quot;seguro&quot;:true},{&quot;id&quot;:14,&quot;nome&quot;:&quot;Pedro - Nome Alterado 27276776648875&quot;,&quot;cpf&quot;:&quot;97093236014&quot;,&quot;email&quot;:&quot;carlos@email.com&quot;,&quot;valor&quot;:40000.00,&quot;parcelas&quot;:20,&quot;seguro&quot;:true},{&quot;id&quot;:16,&quot;nome&quot;:&quot;Carlos Roberto Piva&quot;,&quot;cpf&quot;:&quot;86593266544&quot;,&quot;email&quot;:&quot;carlos@email.com&quot;,&quot;valor&quot;:1.00,&quot;parcelas&quot;:20,&quot;seguro&quot;:true},{&quot;id&quot;:80,&quot;nome&quot;:&quot;Carlos Roberto Piva&quot;,&quot;cpf&quot;:&quot;2324533&quot;,&quot;email&quot;:&quot;carlos@email.com&quot;,&quot;valor&quot;:40000.00,&quot;parcelas&quot;:20,&quot;seguro&quot;:true}]&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: instance type (array) does not match any allowed primitive type (allowed: ["object"])
+    level: "error"
+    schema: {"loadingURI":"file:/home/carlospj/Desktop/provaAutomacaoAPI/target/test-classes/jsonValidations.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "array"
+    expected: ["object"]
+
+  Actual: [{"id":11,"nome":"Fulano","cpf":"66414919004","email":"fulano@gmail.com","valor":11000.00,"parcelas":3,"seguro":true},{"id":12,"nome":"Pedro - Nome Alterado15275344194600","cpf":"17822386034","email":"carlos@email.com","valor":20000.00,"parcelas":20,"seguro":true},{"id":14,"nome":"Pedro - Nome Alterado 27276776648875","cpf":"97093236014","email":"carlos@email.com","valor":40000.00,"parcelas":20,"seguro":true},{"id":16,"nome":"Carlos Roberto Piva","cpf":"86593266544","email":"carlos@email.com","valor":1.00,"parcelas":20,"seguro":true},{"id":80,"nome":"Carlos Roberto Piva","cpf":"2324533","email":"carlos@email.com","valor":40000.00,"parcelas":20,"seguro":true}]
+
+]]></failure>
+    <system-out><![CDATA[
+Funcionalidade: Simulações
+    Como usuário da API de simulações
+    Carlos deseja consultar, criar, alterar e deletar simulações
+    Para que ele possa ter informações do credito
+
+  Contexto: Dado que Carlos tem acesso a API de simulações &amp#27;[90m# src/test/resources/features/simulacoes.feature:8&amp#27;[0m
+
+  @oi1
+  Cenário: Validar contrato da API                  &amp#27;[90m# src/test/resources/features/simulacoes.feature:11&amp#27;[0m
+    &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mele acessar a aplicação&amp#27;[0m                  &amp#27;[90m# SimulacoesSteps.eleAcessarAAplicação()&amp#27;[0m
+Request method:	GET
+Request URI:	http://localhost:8080/api/v1/simulacoes
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Feb 2022 15:16:13 GMT
+
+[
+    {
+        "id": 11,
+        "nome": "Fulano",
+        "cpf": "66414919004",
+        "email": "fulano@gmail.com",
+        "valor": 11000.00,
+        "parcelas": 3,
+        "seguro": true
+    },
+    {
+        "id": 12,
+        "nome": "Pedro - Nome Alterado15275344194600",
+        "cpf": "17822386034",
+        "email": "carlos@email.com",
+        "valor": 20000.00,
+        "parcelas": 20,
+        "seguro": true
+    },
+    {
+        "id": 14,
+        "nome": "Pedro - Nome Alterado 27276776648875",
+        "cpf": "97093236014",
+        "email": "carlos@email.com",
+        "valor": 40000.00,
+        "parcelas": 20,
+        "seguro": true
+    },
+    {
+        "id": 16,
+        "nome": "Carlos Roberto Piva",
+        "cpf": "86593266544",
+        "email": "carlos@email.com",
+        "valor": 1.00,
+        "parcelas": 20,
+        "seguro": true
+    },
+    {
+        "id": 80,
+        "nome": "Carlos Roberto Piva",
+        "cpf": "2324533",
+        "email": "carlos@email.com",
+        "valor": 40000.00,
+        "parcelas": 20,
+        "seguro": true
+    }
+]
+    &amp#27;[31mEntão &amp#27;[0m&amp#27;[31mos campos dever ver iguais ao do contrato&amp#27;[0m &amp#27;[90m# SimulacoesSteps.osCamposDeverVerIguaisAoDoContrato()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: instance type (array) does not match any allowed primitive type (allowed: ["object"])
+    level: "error"
+    schema: {"loadingURI":"file:/home/carlospj/Desktop/provaAutomacaoAPI/target/test-classes/jsonValidations.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "array"
+    expected: ["object"]
+
+  Actual: [{"id":11,"nome":"Fulano","cpf":"66414919004","email":"fulano@gmail.com","valor":11000.00,"parcelas":3,"seguro":true},{"id":12,"nome":"Pedro - Nome Alterado15275344194600","cpf":"17822386034","email":"carlos@email.com","valor":20000.00,"parcelas":20,"seguro":true},{"id":14,"nome":"Pedro - Nome Alterado 27276776648875","cpf":"97093236014","email":"carlos@email.com","valor":40000.00,"parcelas":20,"seguro":true},{"id":16,"nome":"Carlos Roberto Piva","cpf":"86593266544","email":"carlos@email.com","valor":1.00,"parcelas":20,"seguro":true},{"id":80,"nome":"Carlos Roberto Piva","cpf":"2324533","email":"carlos@email.com","valor":40000.00,"parcelas":20,"seguro":true}]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:98)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at actions.SimulacoesAction.validarContrato(SimulacoesAction.java:34)
+	at steps.SimulacoesSteps.osCamposDeverVerIguaisAoDoContrato(SimulacoesSteps.java:175)
+	at ✽.os campos dever ver iguais ao do contrato(file:src/test/resources/features/simulacoes.feature:13)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Criar uma simulação" classname="Simulações" time="0.163">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <400>.
+
+]]></failure>
+    <system-out><![CDATA[
+  Contexto: Dado que Carlos tem acesso a API de simulações &amp#27;[90m# src/test/resources/features/simulacoes.feature:8&amp#27;[0m
+
+  @oi11
+  Cenário: Criar uma simulação                                            &amp#27;[90m# src/test/resources/features/simulacoes.feature:16&amp#27;[0m
+2324533
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/simulacoes
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Carlos Roberto Piva",
+    "cpf": "2324533",
+    "email": "carlos@email.com",
+    "valor": 40000,
+    "parcelas": 20,
+    "seguro": true
+}
+
+HTTP/1.1 400 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Feb 2022 15:16:13 GMT
+Connection: close
+
+{
+    "mensagem": "CPF duplicado"
+}
+    &amp#27;[31mQuando &amp#27;[0m&amp#27;[31mele criar uma simulação informando corretamente todos os dados&amp#27;[0m &amp#27;[90m# SimulacoesSteps.eleCriarUmaSimulaçãoInformandoCorretamenteTodosOsDados()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <400>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$4.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at utils.Utils.post(Utils.java:76)
+	at actions.SimulacoesAction.criarSimulacao(SimulacoesAction.java:42)
+	at steps.SimulacoesSteps.eleCriarUmaSimulaçãoInformandoCorretamenteTodosOsDados(SimulacoesSteps.java:14)
+	at ✽.ele criar uma simulação informando corretamente todos os dados(file:src/test/resources/features/simulacoes.feature:17)
+&amp#27;[0m
+    &amp#27;[36mEntão &amp#27;[0m&amp#27;[36mapós validação dos dados a simulação será criada com sucesso&amp#27;[0m    &amp#27;[90m# SimulacoesSteps.apósValidaçãoDosDadosASimulaçãoSeráCriadaComSucesso()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Validar CPF existente" classname="Simulações" time="0.626"/>
+  <testcase name="Verificar E-mail inválido" classname="Simulações" time="0.05"/>
+  <testcase name="Validar o valor mínimo da simulação" classname="Simulações" time="0.053">
+    <failure message="expected:&lt;Valor deve ser maior ou igual a R$ 1.000&gt; but was:&lt;null&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<Valor deve ser maior ou igual a R$ 1.000> but was:<null>
+]]></failure>
+    <system-out><![CDATA[
+  Contexto: Dado que Carlos tem acesso a API de simulações &amp#27;[90m# src/test/resources/features/simulacoes.feature:8&amp#27;[0m
+
+  @oi1
+  Cenário: Validar o valor mínimo da simulação                                                             &amp#27;[90m# src/test/resources/features/simulacoes.feature:32&amp#27;[0m
+    &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mele criar uma simulação informando um valor menor que ao permitido&amp#27;[0m                              &amp#27;[90m# SimulacoesSteps.eleCriarUmaSimulaçãoInformandoUmValorMenorQueAoPermitido()&amp#27;[0m
+    &amp#27;[31mEntão &amp#27;[0m&amp#27;[31mapós validação dos dados será exibido uma mensagem informado que o valor é inferior ao permitido&amp#27;[0m &amp#27;[90m# SimulacoesSteps.apósValidaçãoDosDadosSeráExibidoUmaMensagemInformadoQueOValorÉInferiorAoPermitido()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: expected:<Valor deve ser maior ou igual a R$ 1.000> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at actions.SimulacoesAction.validarValorMinimo(SimulacoesAction.java:97)
+	at steps.SimulacoesSteps.apósValidaçãoDosDadosSeráExibidoUmaMensagemInformadoQueOValorÉInferiorAoPermitido(SimulacoesSteps.java:49)
+	at ✽.após validação dos dados será exibido uma mensagem informado que o valor é inferior ao permitido(file:src/test/resources/features/simulacoes.feature:34)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Validar o valor máximo da simulação" classname="Simulações" time="0.047"/>
+  <testcase name="Validar o número mínimo de parcelas" classname="Simulações" time="0.037"/>
+  <testcase name="Validar o número máximo de parcelas" classname="Simulações" time="0.038">
+    <failure message="expected:&lt;Parcelas deve ser igual ou menor que 48&gt; but was:&lt;null&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<Parcelas deve ser igual ou menor que 48> but was:<null>
+]]></failure>
+    <system-out><![CDATA[
+  Contexto: Dado que Carlos tem acesso a API de simulações &amp#27;[90m# src/test/resources/features/simulacoes.feature:8&amp#27;[0m
+
+  @oi1
+  Cenário: Validar o número máximo de parcelas                                                                              &amp#27;[90m# src/test/resources/features/simulacoes.feature:47&amp#27;[0m
+    &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mele criar uma simulação informando o número de parcelas superior ao permitido&amp#27;[0m                                    &amp#27;[90m# SimulacoesSteps.eleCriarUmaSimulaçãoInformandoONúmeroDeParcelasSuperiorAoPermitido()&amp#27;[0m
+    &amp#27;[31mEntão &amp#27;[0m&amp#27;[31mapós validação dos dados será exibido uma mensagem informando que a quantidade de parcelas é superior a permitida&amp#27;[0m &amp#27;[90m# SimulacoesSteps.apósValidaçãoDosDadosSeráExibidoUmaMensagemInformandoQueAQuantidadeDeParcelasÉSuperiorAPermitida()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: expected:<Parcelas deve ser igual ou menor que 48> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at actions.SimulacoesAction.validarQuantidadeMaximaDeParcelas(SimulacoesAction.java:128)
+	at steps.SimulacoesSteps.apósValidaçãoDosDadosSeráExibidoUmaMensagemInformandoQueAQuantidadeDeParcelasÉSuperiorAPermitida(SimulacoesSteps.java:79)
+	at ✽.após validação dos dados será exibido uma mensagem informando que a quantidade de parcelas é superior a permitida(file:src/test/resources/features/simulacoes.feature:49)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Validar simulação sem seguro" classname="Simulações" time="0.059"/>
+  <testcase name="Alterar os dados de uma simulação" classname="Simulações" time="0.094"/>
+  <testcase name="Alterar os dados de uma simulação não cadastrada" classname="Simulações" time="0.069">
+    <failure message="expected:&lt;CPF []não encontrado&gt; but was:&lt;CPF [0000000000 ]não encontrado&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<CPF []não encontrado> but was:<CPF [0000000000 ]não encontrado>
+]]></failure>
+    <system-out><![CDATA[
+  Contexto: Dado que Carlos tem acesso a API de simulações &amp#27;[90m# src/test/resources/features/simulacoes.feature:8&amp#27;[0m
+
+  @oi1
+  Cenário: Alterar os dados de uma simulação não cadastrada                                                &amp#27;[90m# src/test/resources/features/simulacoes.feature:62&amp#27;[0m
+0000000000
+    &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mele tentar alterar os dados de uma simulação não cadastrada&amp#27;[0m                                     &amp#27;[90m# SimulacoesSteps.eleTentarAlterarOsDadosDeUmaSimulaçãoNãoCadastrada()&amp#27;[0m
+    &amp#27;[31mEntão &amp#27;[0m&amp#27;[31mapós validação dos dados será exibido uma mensagem informando que a simulação não foi encontrada&amp#27;[0m &amp#27;[90m# SimulacoesSteps.apósValidaçãoDosDadosSeráExibidoUmaMensagemInformandoQueASimulaçãoNãoFoiEncontrada()&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<CPF []não encontrado> but was:<CPF [0000000000 ]não encontrado>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at actions.SimulacoesAction.validarMensagemErro(SimulacoesAction.java:162)
+	at steps.SimulacoesSteps.apósValidaçãoDosDadosSeráExibidoUmaMensagemInformandoQueASimulaçãoNãoFoiEncontrada(SimulacoesSteps.java:109)
+	at ✽.após validação dos dados será exibido uma mensagem informando que a simulação não foi encontrada(file:src/test/resources/features/simulacoes.feature:64)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Validar a alteração de CPF já existente" classname="Simulações" time="0.071">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;409&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <409> but was <200>.
+
+]]></failure>
+    <system-out><![CDATA[
+  Contexto: Dado que Carlos tem acesso a API de simulações &amp#27;[90m# src/test/resources/features/simulacoes.feature:8&amp#27;[0m
+
+  @oi1
+  Cenário: Validar a alteração de CPF já existente                                                                    &amp#27;[90m# src/test/resources/features/simulacoes.feature:67&amp#27;[0m
+97093236014
+Request method:	PUT
+Request URI:	http://localhost:8080/api/v1/simulacoes/97093236014
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	cpf=97093236014
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Pedro - Nome Alterado 28396474245284",
+    "cpf": "97093236014",
+    "email": "carlos@email.com",
+    "valor": 40000,
+    "parcelas": 20,
+    "seguro": true
+}
+
+HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Feb 2022 15:16:14 GMT
+
+{
+    "id": 14,
+    "nome": "Pedro - Nome Alterado 28396474245284",
+    "cpf": "97093236014",
+    "email": "carlos@email.com",
+    "valor": 40000.00,
+    "parcelas": 20,
+    "seguro": true
+}
+    &amp#27;[31mQuando &amp#27;[0m&amp#27;[31mele alterar o CPF da simulação informando um CPF já existente&amp#27;[0m                                              &amp#27;[90m# SimulacoesSteps.eleAlterarOCPFDaSimulaçãoInformandoUmCPFJáExistente()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 1 expectation failed.
+Expected status code <409> but was <200>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$4.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at utils.Utils.put(Utils.java:91)
+	at actions.SimulacoesAction.alterarDadosSimulação(SimulacoesAction.java:150)
+	at steps.SimulacoesSteps.eleAlterarOCPFDaSimulaçãoInformandoUmCPFJáExistente(SimulacoesSteps.java:114)
+	at ✽.ele alterar o CPF da simulação informando um CPF já existente(file:src/test/resources/features/simulacoes.feature:68)
+&amp#27;[0m
+    &amp#27;[36mEntão &amp#27;[0m&amp#27;[36mapós validação dos dados será exibido uma mensagem informando que o CPF já foi utilizado em outra simulação&amp#27;[0m &amp#27;[90m# SimulacoesSteps.apósValidaçãoDosDadosSeráExibidoUmaMensagemInformandoQueOCPFJáFoiUtilizadoEmOutraSimulação()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Consultar todas as simulações" classname="Simulações" time="0.051"/>
+  <testcase name="Consultar uma simulações cadastrada utilizando o CPF" classname="Simulações" time="0.051"/>
+  <testcase name="Consultar uma simulação não existente utilizando o CPF" classname="Simulações" time="0.055">
+    <failure message="expected:&lt;CPF []não encontrado&gt; but was:&lt;CPF [12536952211 ]não encontrado&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<CPF []não encontrado> but was:<CPF [12536952211 ]não encontrado>
+]]></failure>
+    <system-out><![CDATA[
+  Contexto: Dado que Carlos tem acesso a API de simulações &amp#27;[90m# src/test/resources/features/simulacoes.feature:8&amp#27;[0m
+
+  @oi1
+  Cenário: Consultar uma simulação não existente utilizando o CPF                                      &amp#27;[90m# src/test/resources/features/simulacoes.feature:82&amp#27;[0m
+    &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mele consultar uma simulação não existente informando o CPF&amp#27;[0m                                  &amp#27;[90m# SimulacoesSteps.eleConsultarUmaSimulaçãoNãoExistenteInformandoOCPF()&amp#27;[0m
+    &amp#27;[31mEntão &amp#27;[0m&amp#27;[31mapós validação dos dados será exibido uma mensagem informando que o CPF não possui simulação&amp#27;[0m &amp#27;[90m# SimulacoesSteps.apósValidaçãoDosDadosSeráExibidoUmaMensagemInformandoQueOCPFNãoPossuiSimulação()&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<CPF []não encontrado> but was:<CPF [12536952211 ]não encontrado>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at actions.SimulacoesAction.validarMensagemErro(SimulacoesAction.java:162)
+	at steps.SimulacoesSteps.apósValidaçãoDosDadosSeráExibidoUmaMensagemInformandoQueOCPFNãoPossuiSimulação(SimulacoesSteps.java:145)
+	at ✽.após validação dos dados será exibido uma mensagem informando que o CPF não possui simulação(file:src/test/resources/features/simulacoes.feature:84)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Excluir uma simulação cadastrada" classname="Simulações" time="0.059">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <400>.
+
+]]></failure>
+    <system-out><![CDATA[
+  Contexto: Dado que Carlos tem acesso a API de simulações &amp#27;[90m# src/test/resources/features/simulacoes.feature:8&amp#27;[0m
+
+  @oi1
+  Cenário: Excluir uma simulação cadastrada                                                              &amp#27;[90m# src/test/resources/features/simulacoes.feature:87&amp#27;[0m
+2324533
+Request method:	POST
+Request URI:	http://localhost:8080/api/v1/simulacoes
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Carlos Roberto Piva",
+    "cpf": "2324533",
+    "email": "carlos@email.com",
+    "valor": 40000,
+    "parcelas": 20,
+    "seguro": true
+}
+
+HTTP/1.1 400 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 04 Feb 2022 15:16:14 GMT
+Connection: close
+
+{
+    "mensagem": "CPF duplicado"
+}
+    &amp#27;[31mQuando &amp#27;[0m&amp#27;[31mele excluir a simulação consultada&amp#27;[0m                                                            &amp#27;[90m# SimulacoesSteps.eleExcluirASimulaçãoConsultada()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <400>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$4.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at utils.Utils.post(Utils.java:76)
+	at actions.SimulacoesAction.criarSimulacao(SimulacoesAction.java:42)
+	at actions.SimulacoesAction.excluirSimulacao(SimulacoesAction.java:201)
+	at steps.SimulacoesSteps.eleExcluirASimulaçãoConsultada(SimulacoesSteps.java:150)
+	at ✽.ele excluir a simulação consultada(file:src/test/resources/features/simulacoes.feature:88)
+&amp#27;[0m
+    &amp#27;[36mEntão &amp#27;[0m&amp#27;[36mapós a exclusão da simulação será exibido uma mensagem informando que a exclusão foi realizada&amp#27;[0m &amp#27;[90m# SimulacoesSteps.apósAExclusãoDaSimulaçãoSeráExibidoUmaMensagemInformandoQueAExclusãoFoiRealizada()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Excluir uma simulação não cadastrada" classname="Simulações" time="0.022">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <404> but was <200>.
+
+]]></failure>
+    <system-out><![CDATA[
+  Contexto: Dado que Carlos tem acesso a API de simulações &amp#27;[90m# src/test/resources/features/simulacoes.feature:8&amp#27;[0m
+
+  @oi1
+  Cenário: Excluir uma simulação não cadastrada                                   &amp#27;[90m# src/test/resources/features/simulacoes.feature:92&amp#27;[0m
+Request method:	DELETE
+Request URI:	http://localhost:8080/api/v1/simulacoes/1000000
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	cpf=1000000
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+HTTP/1.1 200 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 2
+Date: Fri, 04 Feb 2022 15:16:14 GMT
+
+OK
+    &amp#27;[31mQuando &amp#27;[0m&amp#27;[31mele tentar excluir uma simulação não cadastrada&amp#27;[0m                        &amp#27;[90m# SimulacoesSteps.eleTentarExcluirUmaSimulaçãoNãoCadastrada()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <200>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$4.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at utils.Utils.delete(Utils.java:104)
+	at actions.SimulacoesAction.excluirSimulacaoNaoEncontrada(SimulacoesAction.java:221)
+	at steps.SimulacoesSteps.eleTentarExcluirUmaSimulaçãoNãoCadastrada(SimulacoesSteps.java:160)
+	at ✽.ele tentar excluir uma simulação não cadastrada(file:src/test/resources/features/simulacoes.feature:93)
+&amp#27;[0m
+    &amp#27;[36mEntão &amp#27;[0m&amp#27;[36mserá exibido uma mensagem informando que a simulação não foi encontrada&amp#27;[0m &amp#27;[90m# SimulacoesSteps.seráExibidoUmaMensagemInformandoQueASimulaçãoNãoFoiEncontrada()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
