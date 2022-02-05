@@ -11,7 +11,7 @@ mvn clean test
 
 ### 🔩 Analise os testes de ponta a ponta
 
-Explique que eles verificam esses testes e porquê.
+Testes teste teste teste 
 
 ```
 Dar exemplos
