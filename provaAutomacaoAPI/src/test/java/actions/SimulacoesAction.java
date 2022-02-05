@@ -1,6 +1,6 @@
 package actions;
 
-import controllers.SimulacaoController;
+import models.SimulacaoModel;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import steps.BaseTest;
@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 public class SimulacoesAction extends BaseTest {
 
     Utils utils = new Utils();
-    SimulacaoController dadosSimulacao = new SimulacaoController();
+    SimulacaoModel dadosSimulacao = new SimulacaoModel();
 
     private final String SIMULACAO = utils.lerArquivoYaml("endpoints","criarSimulacao");
     private final String ALTERAR_SIMULACAO = utils.lerArquivoYaml("endpoints","alterarSimulacao");

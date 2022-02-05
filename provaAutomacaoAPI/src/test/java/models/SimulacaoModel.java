@@ -1,11 +1,11 @@
-package controllers;
+package models;
 
 import utils.Utils;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class SimulacaoController {
+public class SimulacaoModel {
 
     Utils utils = new Utils();
 

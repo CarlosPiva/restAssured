@@ -1,6 +1,6 @@
 package utils;
 
-import controllers.SimulacaoController;
+import models.SimulacaoModel;
 import io.restassured.response.Response;
 import org.yaml.snakeyaml.Yaml;
 
@@ -64,7 +64,7 @@ public class Utils {
         return response;
     }
 
-    public Response post(SimulacaoController body, String endpoint, Integer statusCode){
+    public Response post(SimulacaoModel body, String endpoint, Integer statusCode){
 
         Response response =
                         given()
@@ -78,7 +78,7 @@ public class Utils {
         return response;
     }
 
-    public Response put(SimulacaoController body, String pathParametro, String endpoint, Integer statusCode){
+    public Response put(SimulacaoModel body, String pathParametro, String endpoint, Integer statusCode){
         Response response =
                         given()
                             .body(body)
